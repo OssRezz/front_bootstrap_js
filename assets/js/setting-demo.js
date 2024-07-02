@@ -84,7 +84,10 @@ var toggle_customSidebar = false,
 if (!toggle_customSidebar) {
   var toggle = $(".custom-template .custom-toggle");
 
-  toggle.on("click", function () {
+  const toggle_paint = document.querySelector("#custom-toggle-btn");
+
+  toggle_paint.addEventListener("click", (e) => {
+    console.log("toggle");
     if (custom_open == 1) {
       $(".custom-template").removeClass("open");
       toggle.removeClass("toggled");
@@ -95,6 +98,18 @@ if (!toggle_customSidebar) {
       custom_open = 1;
     }
   });
+  // toggle.on("click", function () {
+  //   console.log("toggle");
+  //   if (custom_open == 1) {
+  //     $(".custom-template").removeClass("open");
+  //     toggle.removeClass("toggled");
+  //     custom_open = 0;
+  //   } else {
+  //     $(".custom-template").addClass("open");
+  //     toggle.addClass("toggled");
+  //     custom_open = 1;
+  //   }
+  // });
   toggle_customSidebar = true;
 }
 

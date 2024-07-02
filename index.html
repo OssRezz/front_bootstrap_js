@@ -62,14 +62,13 @@
       <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
-            <li class="nav-item">
-              <a href="widgets.html">
-                <i class="fas fa-desktop"></i>
-                <p>Widgets</p>
-                <span class="badge badge-success">4</span>
+            <li class="nav-item active">
+              <a href="index.html">
+                <i class="fas fa-home"></i>
+                <p>Inicio</p>
               </a>
             </li>
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
               <a data-bs-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
                 <i class="fas fa-home"></i>
                 <p>Inicio</p>
@@ -84,7 +83,7 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -117,25 +116,11 @@
         <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
           <div class="container-fluid">
             <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
-              <li class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                  aria-expanded="false" aria-haspopup="true">
-                  <i class="fa fa-search"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-search animated fadeIn">
-                  <form class="navbar-left navbar-form nav-search">
-                    <div class="input-group">
-                      <input type="text" placeholder="Search ..." class="form-control" />
-                    </div>
-                  </form>
-                </ul>
+              <li class="nav-item topbar-icon dropdown hidden-caret">
+                <button class="nav-link" id="custom-toggle-btn">
+                  <i class="fas fa-paint-roller"></i>
+                </button>
               </li>
-              <!-- <li class="nav-item topbar-icon dropdown hidden-caret">
-                <a class="nav-link custom-toggle" href="#" id="messageDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-envelope"></i>
-                </a>
-              </li> -->
               <li class="nav-item topbar-user dropdown hidden-caret">
                 <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
                   <div class="avatar-sm">
@@ -242,9 +227,6 @@
           </div>
         </div>
       </div>
-      <div class="custom-toggle">
-        <i class="icon-settings"></i>
-      </div>
     </div>
     <!-- End Custom template -->
   </div>
@@ -258,7 +240,7 @@
 
   <!-- Kaiadmin JS -->
   <script src="assets/js/kaiadmin.min.js"></script>
-  <script src="assets/js/setting-demo.js"></script>
+  <script src="assets/js/setting-demo.js" defer></script>
 
 
 </body>
